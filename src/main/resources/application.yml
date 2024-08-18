@@ -3,5 +3,11 @@ greeting:
 
 quarkus:
   datasource:
-    jdbc.url: jdbc:postgresql://localhost:5432/employee
+    jdbc.url: jdbc:postgresql://localhost:5432/quarkus
+    username: quarkus
+    password: quarkus
     ssl: false
+  hibernate-orm:
+    database:
+      generation: update
+    sql-load-script: import.sql
